@@ -36,7 +36,7 @@ sem_t kitchen_sem;
 sem_t ready_sem;
 sem_t leave_sem;
 
-int clients_amount;
+int clients_amount, orders_taken = 0, orders_finnished_taken = 0;
 
 class Client
 {
@@ -72,21 +72,26 @@ class Waiter
 public:
     void takeOrder(int clients_amount)
     {
-        for (int i = 0; i < clients_amount; i++)
+        while (orders_finnished_taken != clients_amount)
         {
             sem_wait(&waiter_sem);
-            sem_wait(&ready_mutex);
-            Order taken_order = ready.front();
-            ready.pop();
-            sem_post(&ready_mutex);
-            std::cout << "(G) Entregando pedido: " << taken_order.id << "\n";
-            std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 5));
-            sem_wait(&delivered_mutex);
-            Order delivered_order = delivered.front();
-            delivered.pop();
-            std::cout << "(G) Pedido entregue: " << taken_order.id << "\n";
-            sem_post(&delivered_mutex);
-            sem_post(&ready_sem);
+            if (orders_finnished_taken != clients_amount)
+            {
+                sem_wait(&ready_mutex);
+                Order taken_order = ready.front();
+                ready.pop();
+                orders_finnished_taken++;
+                sem_post(&waiter_sem);
+                sem_post(&ready_mutex);
+                std::cout << "(G) Entregando pedido: " << taken_order.id << "\n";
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
+                sem_wait(&delivered_mutex);
+                Order delivered_order = delivered.front();
+                delivered.pop();
+                std::cout << "(G) Pedido entregue: " << taken_order.id << "\n";
+                sem_post(&delivered_mutex);
+                sem_post(&ready_sem);
+            }
         }
     }
 };
@@ -96,19 +101,24 @@ class Kitchen
 public:
     void prepareOrder(int clients_amount)
     {
-        for (int i = 0; i < clients_amount; i++)
+        while (orders_taken != clients_amount)
         {
             sem_wait(&kitchen_sem);
-            sem_wait(&kitchen_mutex);
-            Order preparing = orders.front();
-            orders.pop();
-            sem_post(&kitchen_mutex);
-            std::cout << "(K) Em preparo: " << preparing.id << "\n";
-            std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 5));
-            sem_wait(&ready_mutex);
-            ready.push(preparing);
-            sem_post(&ready_mutex);
-            sem_post(&waiter_sem);
+            if (orders_taken != clients_amount)
+            {
+                sem_wait(&kitchen_mutex);
+                Order preparing = orders.front();
+                orders.pop();
+                orders_taken++;
+                sem_post(&kitchen_sem);
+                sem_post(&kitchen_mutex);
+                std::cout << "(K) Em preparo: " << preparing.id << "\n";
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
+                sem_wait(&ready_mutex);
+                ready.push(preparing);
+                sem_post(&ready_mutex);
+                sem_post(&waiter_sem);
+            }
         }
     }
 };
@@ -126,8 +136,8 @@ int main()
 {
     std::srand(std::time(NULL));
     // Clientes Aleatórios
-    clients_amount = std::rand() % 15;
-    int waiters_amount = 1;
+    clients_amount = 1 + (std::rand() % 14);
+    int waiters_amount = 1 + (std::rand() % 2);
 
     std::cout << "Número de clientes: " << clients_amount << '\n';
     std::cout << "Número de garçons: " << waiters_amount << '\n';
