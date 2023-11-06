@@ -30,7 +30,6 @@ sem_t delivered_mutex;
 
 sem_t client_sem;
 sem_t ready_sem;
-sem_t leave_sem;
 
 int clients_amount, orders_taken = 0, orders_finnished_taken = 0;
 int left_clients = 0;
@@ -56,13 +55,11 @@ public:
         sem_wait(&delivered_mutex);
         Order delivered_order = delivered.front();
         delivered.pop();
+        left_clients++;
+        std::cout << "(C) Cliente " << left_clients << " saiu\n";
         sem_post(&delivered_mutex);
         std::cout << "(C) Cliente recebeu o pedido " << delivered_order.id << "\n";
         sem_post(&client_sem);
-        sem_wait(&leave_sem);
-        left_clients++;
-        std::cout << "(C) Cliente " << left_clients << " saiu\n";
-        sem_post(&leave_sem);
     };
 };
 
@@ -158,7 +155,6 @@ int main()
 
     sem_init(&client_sem, 0, clients_amount);
     sem_init(&ready_sem, 0, 0);
-    sem_init(&leave_sem, 0, 1);
 
     sem_init(&orders_mutex, 0, 1);
     sem_init(&ready_mutex, 0, 1);
