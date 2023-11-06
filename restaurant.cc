@@ -29,6 +29,7 @@ sem_t ready_sem;
 
 int clients_amount, orders_taken = 0, orders_finnished_taken = 0;
 int left_clients = 0;
+int kitchens_amount, waiters_amount;
 
 int active_waiter = 0, active_kitchen = 0;
 sem_t active_waiter_sem, active_kitchen_sem;
@@ -49,7 +50,7 @@ public:
 
 
         sem_wait(&ready_sem);
-        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
         sem_wait(&delivered_mutex);
         Order delivered_order = delivered.front();
         delivered.pop();
@@ -80,7 +81,7 @@ public:
                 sem_post(&active_waiter_sem);
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(10));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
                 sem_wait(&delivered_mutex);
                 delivered.push(taken_order);
                 sem_post(&delivered_mutex);
@@ -119,7 +120,7 @@ public:
                 sem_post(&active_kitchen_sem);
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(1));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
                 sem_wait(&ready_mutex);
                 ready.push(preparing);
                 sem_post(&ready_mutex);
@@ -176,24 +177,13 @@ class Manager
     }
 };
 
-/* Passos */
-// Cliente faz um pedido
-// Pedido vai pra uma fila de pedidos
-// Cozinhas pegam um pedido na fila
-// Cozinha faz o prato
-// Garçom pega o prato do buffer da cozinha
-// Levam pra fila prontos
-// Devolve pro cliente
-
-
 int main(int argc, char *argv[])
 {
-    int kitchens_amount, waiters_amount;
     if (argc > 1)
     {
-        clients_amount = std::atoi(argv[1]);     // 1 + (std::rand() % 14);
-        kitchens_amount = std::atoi(argv[2]); // 1 + (std::rand() % 3);
-        waiters_amount = std::atoi(argv[3]);  // 2 + (std::rand() % 4);
+        clients_amount = std::atoi(argv[1]);
+        kitchens_amount = std::atoi(argv[2]);
+        waiters_amount = std::atoi(argv[3]);
     }
     else
     {

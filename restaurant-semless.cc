@@ -22,6 +22,7 @@ std::queue<Order> delivered;
 
 int clients_amount, orders_taken = 0, orders_finnished_taken = 0;
 int left_clients = 0;
+int kitchens_amount, waiters_amount;
 
 int active_waiter = 0, active_kitchen = 0;
 
@@ -149,18 +150,8 @@ public:
     }
 };
 
-/* Passos */
-// Cliente faz um pedido
-// Pedido vai pra uma fila de pedidos
-// Cozinhas pegam um pedido na fila
-// Cozinha faz o prato
-// Garçom pega o prato do buffer da cozinha
-// Levam pra fila prontos
-// Devolve pro cliente
-
 int main(int argc, char *argv[])
 {
-    int kitchens_amount, waiters_amount;
     if (argc > 1)
     {
         clients_amount = std::atoi(argv[1]);  // 1 + (std::rand() % 14);

@@ -36,7 +36,7 @@ public:
     };
 
     void leave() {
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
         Order delivered_order = delivered.front();
         delivered.pop();
@@ -49,9 +49,6 @@ class Waiter
 public:
     void takeOrder()
     {
-        // while (orders_finnished_taken < clients_amount)
-        // {
-
             if (ready.size()) // Tem pratos prontos? Sim -> Verifico os pratos | Não -> Verifico se já acabou
             {
                 Order taken_order = ready.front();
@@ -61,12 +58,11 @@ public:
                 active_waiter++;
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(3));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
                 delivered.push(taken_order);
                 active_waiter--;
             }
-        // }
     }
 };
 
@@ -75,9 +71,6 @@ class Kitchen
 public:
     void prepareOrder()
     {
-        // while (orders_taken < clients_amount)
-        // {
-
             if (orders.size()) // Tem pedidos mesmo? -> Cozinho
             {
                 Order preparing = orders.front();
@@ -87,13 +80,12 @@ public:
                 active_kitchen++;
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
                 ready.push(preparing);
 
                 active_kitchen--;
             }
-        // }
     }
 };
 
@@ -143,15 +135,6 @@ public:
         }
     }
 };
-
-/* Passos */
-// Cliente faz um pedido
-// Pedido vai pra uma fila de pedidos
-// Cozinhas pegam um pedido na fila
-// Cozinha faz o prato
-// Garçom pega o prato do buffer da cozinha
-// Levam pra fila prontos
-// Devolve pro cliente
 
 int main(int argc, char *argv[])
 {
