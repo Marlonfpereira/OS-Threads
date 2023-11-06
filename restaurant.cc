@@ -23,8 +23,6 @@ struct Order
 
 std::queue<Order> orders;
 sem_t orders_mutex;
-std::queue<Order> kitchen_queue;
-sem_t kitchen_mutex;
 std::queue<Order> ready;
 sem_t ready_mutex;
 std::queue<Order> delivered;
@@ -75,15 +73,17 @@ public:
     {
         while (1)
         {
+            // Tem pratos prontos? Sim -> Verifico os pratos | Não -> Espero
             if (ready.size())
             {
-                sem_wait(&ready_mutex);
-                if (ready.size())
+                sem_wait(&ready_mutex); // Minha vez de verificar os pratos
+                if (ready.size()) // Tem pratos prontos mesmo? -> Pego para entregar
                 {
                     Order taken_order = ready.front();
                     ready.pop();
                     orders_finnished_taken++;
-                    sem_post(&ready_mutex);
+                    sem_post(&ready_mutex); // Já peguei minha entrega, libero a verificação
+                    // Processamento não-crítico aqui
                     std::cout << "(G) Entregando pedido: " << taken_order.id << "\n";
                     sem_wait(&delivered_mutex);
                     Order delivered_order = delivered.front();
@@ -92,9 +92,10 @@ public:
                     std::cout << "(G) Pedido entregue: " << taken_order.id << "\n";
                     sem_post(&ready_sem);
                 }
-                else
+                else // Não tem pratos prontos. -> Libero a verificação e espero alguma mudança
                     sem_post(&ready_mutex);
             }
+            // Todos os pratos foram entregues -> Para
             else if (orders_finnished_taken == clients_amount)
                 return;
         }
@@ -108,24 +109,27 @@ public:
     {
         while (1)
         {
+            // Pedidos vazio? Sim -> Verifico os pedidos | Não -> Espero
             if (orders.size())
             {
-                sem_wait(&orders_mutex);
-                if (orders.size())
+                sem_wait(&orders_mutex); // Minha vez de verificar pedidos
+                if (orders.size()) // Tem pedidos mesmo? -> Cozinho
                 {
                     Order preparing = orders.front();
                     orders.pop();
                     orders_taken++;
-                    sem_post(&orders_mutex);
+                    sem_post(&orders_mutex); // Já peguei meu pedido, libero a verificação
                     std::cout << "(K) Em preparo: " << preparing.id << "\n";
+                    // Processamento não-crítico aqui
                     sem_wait(&ready_mutex);
                     ready.push(preparing);
                     sem_post(&ready_mutex);
                     std::cout << "(K) Preparado: " << preparing.id << "\n";
                 }
-                else
+                else // Não tem pedidos. -> Libero a verificação e espero alguma mudança
                     sem_post(&orders_mutex);
             }
+            // Todos pedidos dos clientes foram pegos? -> Para
             else if (orders_taken == clients_amount)
                 return;
         }
@@ -157,7 +161,6 @@ int main()
     sem_init(&leave_sem, 0, 1);
 
     sem_init(&orders_mutex, 0, 1);
-    sem_init(&kitchen_mutex, 0, 1);
     sem_init(&ready_mutex, 0, 1);
     sem_init(&delivered_mutex, 0, 1);
 
