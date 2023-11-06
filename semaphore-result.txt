@@ -1,0 +1,666 @@
+Número de clientes: 10
+Número de garçons: 5
+Número de cozinhas: 2
+
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = 
+ Garçons = 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = 
+ Garçons = 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = [41m + [0m [41m + [0m 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = [43m 0 [0m [43m 1 [0m 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m [41m 9 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m [41m 8 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = [43m + [0m [43m + [0m [43m + [0m 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m [41m 7 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m [41m 6 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m [41m 5 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m [44m 4 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m [41m 4 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m [44m 2 [0m [44m 3 [0m 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m [41m 3 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m [44m 1 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m [41m 2 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = [44m 0 [0m 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m [41m 1 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = [41m 0 [0m 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = [44m + [0m 
+==============================
+[H[J
+ Clientes = 
+ Pedidos = 
+ Cozinhas = 
+ Prontos = 
+ Garçons = 
+ Entregues = 
