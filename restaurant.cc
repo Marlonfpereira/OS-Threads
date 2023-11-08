@@ -40,9 +40,9 @@ private:
 public:
     void createOrder(int id)
     {
-        Order new_order(id);
-
         sem_wait(&client_sem);
+
+        Order new_order(id);
 
         sem_wait(&orders_mutex);
         orders.push(new_order);
