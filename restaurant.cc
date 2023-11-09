@@ -140,29 +140,33 @@ class Manager
     public:
     void seeWorking() {
         while(1) {
-            std::cout << "\n Clientes  = ";
+            std::cout << "\n Clientes     = ";
             for (int i = 0; i < clients_amount - left_clients; i++)
                 std::cout << "\x1b[41m " << i << " \x1b[0m" << " ";
 
-            std::cout << "\n Pedidos   = ";
+            std::cout << "\n Pedidos      = ";
             for (int i = 0; i < orders.size(); i++)
                 std::cout << "\x1b[41m" <<" + " << "\x1b[0m" << " ";
             
-            std::cout << "\n Cozinhas  = ";
+            std::cout << "\n Cozinheiros  = ";
             for (int i = 0; i < active_kitchen; i++)
                 std::cout << "\x1b[43m " << i << " \x1b[0m" << " ";
 
-            std::cout << "\n Prontos   = ";
+            std::cout << "\n Prontos      = ";
             for (int i = 0; i < ready.size(); i++)
                 std::cout << "\x1b[43m" <<" + " << "\x1b[0m" << " ";
             
-            std::cout << "\n Garçons   = ";
+            std::cout << "\n Garçons      = ";
             for (int i = 0; i < active_waiter; i++)
                 std::cout << "\x1b[44m " << i << " \x1b[0m" << " ";
             
-            std::cout << "\n Entregues = ";
+            std::cout << "\n Entregues    = ";
             for (int i = 0; i < delivered.size(); i++)
                 std::cout << "\x1b[44m" <<" + " << "\x1b[0m" << " ";
+
+            std::cout << "\n Clientes ativos    = " << clients_amount - left_clients;
+            std::cout << "\n Cozinheiros ativos = " << active_kitchen;
+            std::cout << "\n Garcons ativos     = " << active_waiter;
             
             if (left_clients == clients_amount)
             {

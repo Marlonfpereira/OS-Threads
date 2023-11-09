@@ -101,48 +101,42 @@ public:
 class Manager
 {
 public:
-    void seeWorking()
-    {
-        while (1)
-        {
-            std::cout << "\n Clients Iniciais: " << clients_amount;
-            std::cout << "\n Clientes  = ";
+    void seeWorking() {
+        while(1) {
+            std::cout << "\n Clientes     = ";
             for (int i = 0; i < clients_amount - left_clients; i++)
                 std::cout << "\x1b[41m " << i << " \x1b[0m" << " ";
 
-            std::cout << "\n Pedidos   = ";
+            std::cout << "\n Pedidos      = ";
             for (int i = 0; i < orders.size(); i++)
-                std::cout << "\x1b[41m" << " + " << "\x1b[0m" << " ";
-
-            std::cout << "\n Cozinhas  = ";
+                std::cout << "\x1b[41m" <<" + " << "\x1b[0m" << " ";
+            
+            std::cout << "\n Cozinheiros  = ";
             for (int i = 0; i < active_kitchen; i++)
                 std::cout << "\x1b[43m " << i << " \x1b[0m" << " ";
 
-            std::cout << "\n Prontos   = ";
+            std::cout << "\n Prontos      = ";
             for (int i = 0; i < ready.size(); i++)
-                std::cout << "\x1b[43m" << " + " << "\x1b[0m" << " ";
-
-            std::cout << "\n Garçons   = ";
+                std::cout << "\x1b[43m" <<" + " << "\x1b[0m" << " ";
+            
+            std::cout << "\n Garçons      = ";
             for (int i = 0; i < active_waiter; i++)
                 std::cout << "\x1b[44m " << i << " \x1b[0m" << " ";
-
-            std::cout << "\n Entregues = ";
+            
+            std::cout << "\n Entregues    = ";
             for (int i = 0; i < delivered.size(); i++)
-                std::cout << "\x1b[44m" << " + " << "\x1b[0m" << " ";
+                std::cout << "\x1b[44m" <<" + " << "\x1b[0m" << " ";
 
+            std::cout << "\n Clientes ativos    = " << clients_amount - left_clients;
+            std::cout << "\n Cozinheiros ativos = " << active_kitchen;
+            std::cout << "\n Garcons ativos     = " << active_waiter;
+            
             if (left_clients == clients_amount)
             {
                 std::cout << std::endl;
                 return;
             }
-            if (active_kitchen < 0 || active_waiter < 0 || left_clients > clients_amount)
-            {
-                std::cout << "Active Kitchens: " << active_kitchen << "\n";
-                std::cout << "Active Waiters: " << active_waiter << "\n";
-                std::cout << "Active Clients: " << left_clients << "\n";
-                std::exit(1);
-            }
-
+            
             std::cout << "\n==============================\n";
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
             printf("\033[H\033[J");
