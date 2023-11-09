@@ -37,7 +37,7 @@ public:
         orders.push(new_order);
 
         while (delivered.size() == 0);
-        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
         Order delivered_order = delivered.front();
         // delivered.pop();
@@ -62,7 +62,7 @@ public:
                 active_waiter++;
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(10));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
                 delivered.push(taken_order);
                 active_waiter--;
@@ -88,7 +88,7 @@ public:
                 active_kitchen++;
 
                 // Processamento não-crítico aqui
-                std::this_thread::sleep_for(std::chrono::seconds(1));
+                std::this_thread::sleep_for(std::chrono::seconds(1 + std::rand() % 3));
 
                 ready.push(preparing);
 
